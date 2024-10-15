@@ -1,0 +1,66 @@
+/*Fonte do h1*/
+.cineverso, .criticamanutencao{
+    font-family: "Honk", system-ui;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+    font-variation-settings:
+    "MORF" 15,
+    "SHLN" 50;
+}
+
+body .lancamentomanutencao, .criticasmanutencao{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh; /* Para ocupar a altura total da tela */
+    margin: 0; /* Remove a margem padrão */
+}
+
+.criticamanutencao {
+    display: flex;            /* Usa flexbox para centralizar */
+    justify-content: center;  /* Centraliza horizontalmente */
+    align-items: center;      /* Centraliza verticalmente (se necessário) */
+    height: 100vh;           /* Faz com que ocupe toda a altura da tela */
+}
+
+
+/*Linha que aparece no header*/
+header {
+    border-bottom: 2px solid #000; /* Altera a cor e a espessura da linha conforme necessário */
+    padding: 10px 0; /* Adiciona um pouco de espaçamento acima e abaixo da linha */
+}
+
+/*Tamanho do meu h1*/
+h1{
+    font-size: 400%;
+    margin: 0;
+}
+
+/*Deixar lançamento e críticas um ao lado do outro*/
+header nav li{
+    display: inline;
+    margin-left: 16px;
+    font-size: 18px;
+}
+
+/*Cor e (a) sem barra embaixo*/
+header nav ul li a{
+    color: black;
+    text-decoration: none;
+}
+
+/*Espaçamento entre h1 e (a)*/
+.conteiner{
+    max-width: 1300px;
+    width: 100%;
+    margin: 0 auto;
+}
+
+/*Deixar lançamento e críticas no canto*/
+header .conteiner, 
+section .conteiner{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
